@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(192, 237, 245);
+}
+
+.main > button{
+    width: 100px;
+    padding: 10px 20px;
+    margin-left: 50px;
+    background-color: rgb(243, 146, 107);
+    color: white;
+    border: none;
+}
+.main > button:hover{
+   transform: translateY(10px);
+}
+.main-top{
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.setting{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.main-setting{
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+}
+
+.td-img img{
+    width: 70px;
+    height: 80px;
+}
+
+.td-st .btnFix{
+    border: none;
+    background-color: yellowgreen;
+}
+.td-st .btnDel{
+    border: none;
+    background-color: rgb(209, 47, 7);
+    color: white;
+    margin-left: 5px;
+}
+.td-st button:hover{
+    transform: scale(1.1);
+}
+
+.popup{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #393d42a9;
+    display: none;
+   
+}
+@keyframes model {
+    from{
+       opacity: 0.2;
+       transform: scale(0.5);
+    }to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.model{
+    position: absolute;
+    width: 400px;
+    height: 520px;
+    animation: model 0.5s linear;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    display: none;
+    left: 37%;
+    top: 50px;
+}
+.model .fas{
+    position: absolute;
+    right: 10px;
+    font-size: 2rem;
+}
+.model .fas:hover{
+   
+    font-size: 2.2rem;
+}
+.box-add{
+    width: 360px;
+   
+   
+    display: flex;
+    flex-direction: column;
+}
+.box-add form{
+    width: 360px;
+    margin: 40px 20px 0px 20px;
+   
+    display: flex;
+    flex-direction: column;
+}
+.box-add label{
+    margin-top: 10px;
+    font-size: 1.4rem;
+}
+.box-add input{
+    width: 100%;
+    height: 30px;
+    background-color: #3335382d;
+    border: none;
+}
+.box-add input:focus{
+    width: 100%;
+    height: 30px;
+    background-color: #ffffff;
+    border: none;
+}
+.box-add button{
+    width: 100%;
+    padding: 7px 0px;
+    margin-top: 20px;
+    border: none;
+    background-color: tomato;
+    color: white;
+}
+
+
+
